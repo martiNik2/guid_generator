@@ -1,9 +1,10 @@
 from fastapi import FastAPI
-
+import generator
 
 app = FastAPI()
 
 
 @app.get("/")
 def print_crap():
-    return {"hello":"world"}
+    guid=generator.generate_guid()
+    return {"guid":guid}
