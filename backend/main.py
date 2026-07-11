@@ -9,7 +9,7 @@ origins=[
 ]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://0.0.0.0:9000"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]
