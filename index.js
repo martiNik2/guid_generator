@@ -4,11 +4,10 @@ async function fetchGuid() {
   return data;
 }
 
-const guid = fetchGuid().then((data) => data.guid);
-
 const generateButton = document.querySelector(".generate");
 const guidDiv = document.querySelector(".guid");
 
 generateButton.addEventListener("click", async () => {
+  const guid = fetchGuid().then((data) => data.guid);
   guidDiv.textContent = await guid;
 });
