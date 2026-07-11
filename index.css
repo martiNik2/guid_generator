@@ -22,3 +22,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.generate {
+  font-size: 2rem;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px;
+}
