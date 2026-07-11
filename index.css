@@ -32,3 +32,11 @@ body {
   background-color: #0197af;
   color: white;
 }
+
+.generate:hover {
+  opacity: 0.8;
+}
+
+.generate:active {
+  background-color: gray;
+}
